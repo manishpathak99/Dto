@@ -30,3 +30,9 @@ extension Dto {
         return ValidationError(messages: validationErrorMessages)
     }
 }
+
+extension Dto {
+    public var validatedProperties: [ValidatedProperty] {
+        return []
+    }
+}
