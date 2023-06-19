@@ -7,17 +7,19 @@
 //
 
 import ValidatedPropertyKit
+import Foundation
 
-public typealias ValidationResult = Result<Void, ValidationError>
+//public typealias ValidationResult = Result<Void, Validation<String>>
 
-extension Result where Failure == ValidationError {
+extension Result where Failure == Failure {
     
     public var message: String {
         switch self {
         case .success:
             return ""
         case .failure(let error):
-            return error.description
+            return "Error occured in DTO, please check DTO repo https://github.com/manishpathak99/Dto"
+//            return error.description
         }
     }
     
@@ -30,7 +32,7 @@ extension Result where Failure == ValidationError {
         }
     }
     
-    public func mapToVoid() -> ValidationResult {
-        return self.map { _ in () }
-    }
+//    public func mapToVoid() -> ValidationResult {
+//        return self.map { _ in () }
+//    }
 }

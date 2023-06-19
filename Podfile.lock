@@ -1,16 +1,3 @@
-PODS:
-  - ValidatedPropertyKit (0.0.4)
+PODFILE CHECKSUM: b735b9442324925dd57b84c011bc346ce24c5ba3
 
-DEPENDENCIES:
-  - ValidatedPropertyKit
-
-SPEC REPOS:
-  trunk:
-    - ValidatedPropertyKit
-
-SPEC CHECKSUMS:
-  ValidatedPropertyKit: 599b32854be66b3eea55c0ad7aa22c52cba4b997
-
-PODFILE CHECKSUM: 4ec298a4e1b9655164d6c57f90589ae1584bf9e9
-
-COCOAPODS: 1.9.3
+COCOAPODS: 1.11.3

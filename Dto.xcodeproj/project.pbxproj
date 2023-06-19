@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		1716DE5025033B11005111BF /* Dto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1716DE4D25033B11005111BF /* Dto.swift */; };
 		1716DE5125033B11005111BF /* ValidatedProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1716DE4E25033B11005111BF /* ValidatedProperty.swift */; };
 		1716DE5225033B11005111BF /* Result+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1716DE4F25033B11005111BF /* Result+.swift */; };
+		A59396092A405A820075972E /* ValidatedPropertyKit in Frameworks */ = {isa = PBXBuildFile; productRef = A59396082A405A820075972E /* ValidatedPropertyKit */; };
 		F3A3C575765954FC598464B7 /* Pods_Dto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA5106FEC1342660DF14214 /* Pods_Dto.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3A3C575765954FC598464B7 /* Pods_Dto.framework in Frameworks */,
+				A59396092A405A820075972E /* ValidatedPropertyKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,13 +123,15 @@
 				1716DE3125033420005111BF /* Sources */,
 				1716DE3225033420005111BF /* Frameworks */,
 				1716DE3325033420005111BF /* Resources */,
-				12FE5F7946504871C3C078D9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Dto;
+			packageProductDependencies = (
+				A59396082A405A820075972E /* ValidatedPropertyKit */,
+			);
 			productName = Dto;
 			productReference = 1716DE3525033420005111BF /* Dto.app */;
 			productType = "com.apple.product-type.application";
@@ -156,6 +160,9 @@
 				Base,
 			);
 			mainGroup = 1716DE2C25033420005111BF;
+			packageReferences = (
+				A59396072A405A820075972E /* XCRemoteSwiftPackageReference "ValidatedPropertyKit" */,
+			);
 			productRefGroup = 1716DE3625033420005111BF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -179,23 +186,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		12FE5F7946504871C3C078D9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Dto/Pods-Dto-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Dto/Pods-Dto-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dto/Pods-Dto-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		CE93B592B05C7BDB06355580 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -366,16 +356,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Dto/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Dto/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.2.0;
+				MARKETING_VERSION = 0.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = truong.tuan.Dto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -389,16 +379,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Dto/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Dto/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.2.0;
+				MARKETING_VERSION = 0.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = truong.tuan.Dto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -428,6 +418,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A59396072A405A820075972E /* XCRemoteSwiftPackageReference "ValidatedPropertyKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SvenTiigi/ValidatedPropertyKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A59396082A405A820075972E /* ValidatedPropertyKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A59396072A405A820075972E /* XCRemoteSwiftPackageReference "ValidatedPropertyKit" */;
+			productName = ValidatedPropertyKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1716DE2D25033420005111BF /* Project object */;
 }
