@@ -8,7 +8,7 @@ s.summary = "Data Transfer Object "
 s.requires_arc = true
 
 # 2
-s.version = "0.2.0"
+s.version = "0.3.0"
 
 # 3
 s.license = { :type => "MIT", :file => "LICENSE" }
@@ -20,12 +20,12 @@ s.author = { "Tuan Truong" => "tuan188@gmail.com" }
 s.homepage = "https://github.com/tuan188/Dto"
 
 # 6 - Replace this URL with your own Git URL from "Quick Setup"
-s.source = { :git => "https://github.com/tuan188/Dto.git",
+s.source = { :git => "https://github.com/manishpathak99/Dto",
 :tag => "#{s.version}" }
 
 # 7
 s.framework = "UIKit"
-s.dependency 'ValidatedPropertyKit', '~> 0.0.4'
+s.dependency 'ValidatedPropertyKit', '~> 0.0.7'
 
 # 8
 s.source_files = "Dto/**/*.{swift}"
